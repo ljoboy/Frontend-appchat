@@ -43,6 +43,15 @@ couleur.addEventListener('click',function(){
     }
 });
 
+var couleur = document.getElementById("chat1");
+couleur.addEventListener('click',function(){
+    document.getElementById("bottom-field").style.background = "#1d222f";
+    var sam = document.querySelectorAll("span.text-grey"), samy = sam.length;
+    for(var  i=0; i<samy; i++ ){
+        sam[i].style.color="#ffffff";
+    }
+});
+
 var couleur = document.getElementById("chat2");
 couleur.addEventListener('click',function(){
     document.getElementById("chatspace").style.background="url(images/aerial-beverage-blueberry-972530.jpg)";
@@ -52,4 +61,11 @@ couleur.addEventListener('click',function(){
     for(var  i=0; i<samy; i++ ){
         sam[i].style.color="#313131";
     }
+});
+
+var couleur = document.getElementById("chat1");
+couleur.addEventListener('click',function(){
+    document.getElementById("chatspace").style.background="url(images/63dbf39f6f6a0fac00c19cde43dd8832.jpg)";
+    document.getElementById("chatspace").style.backgroundPosition="left";
+    document.getElementById("chatspace").style.backgroundSize="cover";
 });
