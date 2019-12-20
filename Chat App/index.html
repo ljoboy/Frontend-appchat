@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Chat</title>
+    <link rel="favicon" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="bar">
+        <div class="row">
+            <div class="col-lg-10">
+                <a href="" class="text-dark ml-3"><img src="logo.png" style="width:20px;" alt=""> NODE CHAT</a>
+            </div>
+            <div class="col-lg-2" style="text-align:right;">
+                <a href="" class="text-dark mr-2"><i class="icon-minus "></i></a>
+                <a href="" class="text-dark mr-2"><i class="icon-clone "></i></a>
+                <a href="" class="text-dark"><i class="icon-close2 "></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid chat" id="chat">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            
+            <!-- close sidebar menu -->
+            <div class="dismiss">
+                <i class="icon-close2"></i>
+            </div>
+            
+            <div class="logo">
+                <div class="container pt-5 pb-2">
+                    <a href="">
+                    <img src="images/meschac.jpg" class="img-fluid rounded-circle" style="width:25%; height:25%" alt=""> <br>
+                    </a>
+                    <span class="mt-1">Méschac Irung</span> <br>
+                    <small class="lh-0">+243 000 111 222</small>
+                </div>
+            </div>				
+            
+            <div class="dark-light-buttons mt-5">
+                <a id="chat1" class="btn-sm btn-dark btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                <a id="chat2" class="btn-sm btn-light btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+            </div>
+
+            <div class="container fixed-bottom mb-5" style="position: absolute;">
+                <medium> Build with <i class="icon-heart text-danger"></i> by ESPACESIS 2019</medium>
+            </div>
+        
+        </nav>
+        <!-- End sidebar -->
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-lg-4 scrollbar-black" style="overflow-y: scroll; height:695px;">
+                <div class="row pl-5 mt-3 pb-3">
+                    <a href="#" role="button" class="text-grey mr-3 open-menu"><i class="icon-menu icon"></i></a>
+                    <input type="search" class="form search" placeholder="Recherche">
+                </div>
+                <a href="#chatspace #conversation" onclick="javascript:document.getElementById('chatspace').style.display='block';javascript:document.getElementById('conversation').style.display='none';">
+                    <div class="row pl-5 pt-2 pb-2 mt-3 person activate">
+                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="author text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-5 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-5 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-5 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <div id="chatspace" class="chat-space scrollbar-black" style="overflow-y: scroll; height:674px;">
+                    <div id="discussion-tab" class="discussion-tab fixed-top m-auto mb-5" style="position: absolute;;">
+                        <div class="row ml-2 mt-3">
+                            <div>
+                                <h5 class="lh-0">Méschac Irung</h5>
+                                <span class="text-success lh-0">En ligne</span>
+                            </div>
+                            <div style="margin-left: auto;">
+                                <a class="" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false"><i class="icon-more_vert icon"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                                  <a class="dropdown-item" href="#">Afficher le contact</a>
+                                  <a class="dropdown-item" href="#">Bloquer</a>
+                                  <a class="dropdown-item" href="#">Effacer la discussion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height:50px;">
+
+                    </div>
+                    <div class="col-9 discussion-left mt-5">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi et aut cumque assumenda nostrum sapiente pariatur, aspernatur corporis praesentium eveniet, quis vitae veniam facere unde iure voluptatem consectetur quibusdam!
+                            <span class="icon icon-done_all text-success"></span>
+                            <span>15:57</span>
+                        </p>
+                    </div>
+                    <div class="col-9 discussion-right mt-3 mr-2">
+                        <p>
+                            Salut
+                            <span class="icon icon-done_all text-success"></span>
+                            <span>15:57</span>
+                        </p>
+                    </div>
+                    <div class="col-9 discussion-right mt-3 mr-2">
+                        <p>
+                            Alias, molestias nemo laudantium facere similique veniam tempora quas consequatur pariatur natus neque tenetur ea ducimus adipisci, voluptates, architecto iure optio velit.
+                            <span class="icon icon-done_all text-success"></span>
+                            <span>15:57</span>
+                        </p>
+                    </div>
+                    <div class="col-9 discussion-left mt-3 mr-2">
+                        <p>
+                            Salut iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+                            <span class="icon icon-done text-primary"></span>
+                            <span>15:57</span>
+                        </p>
+                    </div>
+                    <div id="bottom-field" class="bottom-field fixed-bottom m-auto" style="position:absolute; width:93%;">
+                        <textarea class="form" cols="59" name="" id="" rows="1" placeholder="Taper un message"></textarea>
+                        <a href="#" role="button"><i class="icon-attach_file icon"></i></a>
+                        <a href="#" role="button"><i class="icon-send2 icon " style="transform: rotateX(30deg);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

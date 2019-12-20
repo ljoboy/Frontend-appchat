@@ -1,0 +1,274 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat-space{
+    background-image:url('images/63dbf39f6f6a0fac00c19cde43dd8832.jpg');
+    background-size: cover;
+    padding-bottom:64px;
+    background-position:right;
+    height:100%;
+    margin: auto;
+    border-left: 4px solid #171b27;;
+    border-right: 4px solid #171b27;
+    color:#ffffff;
+}
+
+@media(max-width:576px){
+    .chat-space{
+        display:none;
+    }
+}
+
+.person{
+    background:none;
+}
+
+.person:hover{
+    background: rgba(204, 246, 255, 0.062);
+}
+
+.discussion-tab{
+    background: #1d222f;
+    padding:5px 20px;
+    color:white;
+    width:93%;
+}
+
+.cam{
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    width:37%;
+    padding:15px;
+    background:#343434;
+    margin:auto;
+}
+
+.bottom-field{
+    position: relative;;
+    margin-bottom:auto;
+    background:#1d222f;
+    padding:10px 20px;
+}
+
+textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    border: none;
+    background:none;
+    color:#ffffff;
+}
+.author{
+    color: #bebebe;
+}
+.form{
+    border:none;
+    background: none;
+    width:85%;
+}
+
+@media(max-width:576px){
+    .form{
+        border:none;
+        background: none;
+        width:80%;
+    }    
+}
+
+.search{
+    background: rgba(214, 214, 214, 0.438);
+    border-radius:5px;
+    width:90%;
+    padding-left:10px;
+}
+
+.bar{
+    background: rgba(214, 214, 214, 0.712);
+    padding:4px 20px 4px 20px;
+    display:none;
+}
+
+.icon{
+    font-size:22px;
+}
+.icon:hover{
+    color:#536081;
+}
+.activate{
+    background-color: rgba(63, 87, 124, 0.849);
+}
+
+.activate:hover{
+    background-color: rgba(63, 87, 124, 0.849);
+}
+
+.form:focus{
+    border:none;
+    box-shadow: 0 0 0 0 transparent;
+
+}
+
+.rot{
+    transform: rotate(90deg);
+}
+
+::placeholder{
+    color:#c5c6c9;
+    font-weight:00;
+}
+
+input{
+    color:white;
+    padding:3px;
+}
+
+.discussion-left{
+    padding:15px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    background: rgba(63, 87, 124, 0.849);
+    max-width:auto;
+    margin:10px;
+    color:white;
+}
+
+.discussion-right{
+    padding:15px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    background: rgba(63, 87, 124, 0.849);
+    margin-left: auto;
+    color:white;
+}
+
+.chat{
+    background: #1d222f;
+    height:100%;
+    transition: all .3s;
+}
+
+.lh-0{
+    line-height:2px;
+}
+
+.profile{
+    width:15%;
+    height:10%;
+}
+
+.text-grey{
+    color: #c5c6c9;
+}
+
+.scrollbar-black::-webkit-scrollbar-track {
+    background-color: none;}
+    
+.scrollbar-black::-webkit-scrollbar {
+    width: 6px;
+    background-color: none; }
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+    background-color:none }
+.scrollbar-black::-webkit-scrollbar-thumb:hover{
+    background: #536081;
+}
+
+.sidebar {
+    width: 300px; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: -305px; 
+    z-index: 999; 
+    background: #233042; 
+    color: #fff; 
+    transition: all .3s; 
+	text-align: left;
+}
+
+.sidebar.active { left: 0; }
+
+.dismiss {
+    width: 35px; 
+    height: 35px; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    transition: all .3s; 
+    background: none; 
+    border-radius: 4px; 
+    text-align: center; 
+    line-height: 35px; 
+    cursor: pointer;
+}
+
+.dismiss:hover, .dismiss:focus { 
+    background: none; 
+    color: #fff; }
+
+.sidebar .logo {
+    border-bottom: 1px solid #444; 
+    transition: all .3s; }
+
+.sidebar .logo  {
+    display: inline-block;
+    background: url(images/G1phJV.jpg);
+    background-size: cover;
+    background-position:center;
+	border: 0;
+
+}
+
+.sidebar ul li a i { 
+    margin-right: 5px; }
+
+.sidebar .dark-light-buttons { 
+    padding: 10px 20px 30px 20px; 
+    text-align: center; }
+
+.sidebar .dark-light-buttons { 
+    padding: 10px 20px 30px 20px; 
+    text-align: center; }
+
+
+.sidebar.light { 
+    background: #fff; 
+    color: black; 
+}
+
+.chat-space.light div p a { 
+    background: #fff; 
+    color:#171b27 !important; 
+}
+
+.sidebar.light .dismiss { 
+    background:none; 
+    color: #fff; 
+}
+
+.sidebar.light .dismiss { 
+    background:none; 
+    color: #fff; 
+}
+
+.sidebar.light .dismiss:hover, 
+.sidebar.light .dismiss:focus { 
+    background: #ccc; 
+    color: #888; 
+}
+
+.sidebar.light .logo { 
+    border-color: #eee; 
+    background-image: url(images/abstrait-geometrique-vert_23-2148374529.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.overlay {
+    display: none; position: fixed; width: 100vw; height: 100vh; 
+    background: rgba(23, 40, 49, 0.514); z-index: 998; opacity: 0; transition: all .5s ease-in-out;
+}
+
+.overlay.active { display: block; opacity: 1; }
