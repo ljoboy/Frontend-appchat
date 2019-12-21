@@ -1,0 +1,11 @@
+.chat-space{
+    background:url('images/63dbf39f6f6a0fac00c19cde43dd8832.jpg');
+    background-size: cover;
+    padding-bottom:64px;
+    background-position:right;
+    height:100%;
+    margin: auto;
+    border-left: 4px solid #171b27;;
+    border-right: 4px solid #171b27;
+    color:#ffffff;
+}

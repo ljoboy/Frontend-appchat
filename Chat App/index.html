@@ -25,7 +25,7 @@
     </div>
     <div class="container-fluid chat" id="chat">
         <!-- Sidebar -->
-        <nav class="sidebar">
+        <nav class="sidebar d-none">
             
             <!-- close sidebar menu -->
             <div class="dismiss">
@@ -53,16 +53,21 @@
         
         </nav>
         <!-- End sidebar -->
-        <div class="overlay"></div>
+        <div class="overlay d-none"></div>
         <div class="row">
-            <div class="col-lg-4 scrollbar-black" style="overflow-y: scroll; height:695px;">
-                <div class="row pl-5 mt-3 pb-3">
-                    <a href="#" role="button" class="text-grey mr-3 open-menu"><i class="icon-menu icon"></i></a>
-                    <input type="search" class="form search" placeholder="Recherche">
+            <div class="col-lg-4 scrollbar-black scroller" style="overflow-y: scroll; height:673px;">
+                <div class="bar row pl-lg-4 mt-0 pb-3 fixed-top">
+                    <a href="#" role="button" class="col-1 text-grey mr-3 open-menu mt-lg-0 mt-3"><i class="icon-menu icon"></i></a>
+                    <h4 class=" d-lg-none text-white col-8 mt-2">Discussion</h4>
+                    <a href="#" class="d-lg-none text-grey mt-3"> <i class="icon-search2 icon"></i></a>
+                    <input type="search" class="col-10 form search" placeholder="Recherche">
                 </div>
-                <a href="#chatspace #conversation" onclick="javascript:document.getElementById('chatspace').style.display='block';javascript:document.getElementById('conversation').style.display='none';">
-                    <div class="row pl-5 pt-2 pb-2 mt-3 person activate">
-                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                <div style="margin-top:75px;" class="">
+
+                </div>
+                <a href="#chatspace #conversation">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 mt-3 person activate">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
                         <div class="ml-2 mt-2">
                             <span class="author text-grey lh-0">Méschac Irung</span> <br>
                             <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
@@ -70,8 +75,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row pl-5 pt-2 pb-2 person ">
-                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
                         <div class="ml-2 mt-2">
                             <span class="text-grey lh-0">Méschac Irung</span> <br>
                             <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
@@ -79,8 +84,8 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row pl-5 pt-2 pb-2 person ">
-                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
                         <div class="ml-2 mt-2">
                             <span class="text-grey lh-0">Méschac Irung</span> <br>
                             <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
@@ -88,8 +93,62 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row pl-5 pt-2 pb-2 person ">
-                        <img src="images/meschac.jpg" class="profile img-fluid rounded-circle" alt="">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="  img-fluid rounded-circle" alt="">
+                        <div class="ml-2 mt-2">
+                            <span class="text-grey lh-0">Méschac Irung</span> <br>
+                            <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="row pl-lg-5 pl-2 pt-2 pb-2 person ">
+                        <img src="images/meschac.jpg" class="img-fluid rounded-circle" alt="">
                         <div class="ml-2 mt-2">
                             <span class="text-grey lh-0">Méschac Irung</span> <br>
                             <small class="text-success lh-0">Vous : <span class="text-grey">Salut, comment tu va ?</span></small>
@@ -98,7 +157,7 @@
                 </a>
             </div>
             <div class="col-lg-5">
-                <div id="chatspace" class="chat-space scrollbar-black" style="overflow-y: scroll; height:674px;">
+                <div id="chatspace" class="chat-space scrollbar-black scroller" style="overflow-y: scroll; height:674px;">
                     <div id="discussion-tab" class="discussion-tab fixed-top m-auto mb-5" style="position: absolute;;">
                         <div class="row ml-2 mt-3">
                             <div>

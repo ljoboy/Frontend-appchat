@@ -1,5 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: #1d222f;
+    height:100%;
+    position: absolute;
 }
 .chat-space{
     background: #171b27;
@@ -25,6 +28,12 @@ body{
 
 .person:hover{
     background: rgba(204, 246, 255, 0.062);
+}
+
+@media(max-width:576px){
+    .person.hover{
+        background: rgba(204, 246, 255, 0.158);
+    }
 }
 
 .discussion-tab{
@@ -90,18 +99,40 @@ textarea:focus{
 .search{
     background: rgba(214, 214, 214, 0.438);
     border-radius:5px;
-    width:90%;
+    width:80%;
     padding-left:10px;
 }
 
+@media(max-width:576px){
+    .search{
+        display: none;
+    }
+}
+
 .bar{
-    background: rgba(214, 214, 214, 0.712);
-    padding:4px 20px 4px 20px;
+    background: rgb(49, 55, 88);
+    padding:6px 0px 0px 10px;
     display:none;
 }
 
+@media(min-width:1200px){
+    .bar{
+        padding:17px 0px 30px 10px;
+        background: #1d222f;
+        position: fixed !important;
+        width: 35%;
+    }
+}
+
+@media(max-width:576px){
+    .bar{
+        position:fixed !important;
+    }
+}
+
+
 .icon{
-    font-size:22px;
+    font-size:28px;
 }
 .icon:hover{
     color:#536081;
@@ -114,6 +145,15 @@ textarea:focus{
     background-color: rgba(63, 87, 124, 0.849);
 }
 
+@media(max-width:576px){
+    .activate{
+        background:none;
+    }
+
+    .activate:hover{
+        background: rgba(204, 246, 255, 0.158);
+    }
+}
 .form:focus{
     border:none;
     box-shadow: 0 0 0 0 transparent;
@@ -187,6 +227,13 @@ input{
     background: #536081;
 }
 
+
+.scroller{
+    overflow-y: scroll;
+    scrollbar-color: #536081 #171b2700;
+    scrollbar-width:thin;
+}
+
 .sidebar {
     width: 300px; 
     height: 100vh; 
@@ -198,6 +245,12 @@ input{
     color: #fff; 
     transition: all .3s; 
 	text-align: left;
+}
+
+@media(max-width:576px){
+    .sidebar{
+        position:absolute;
+    }
 }
 
 .sidebar.active { left: 0; }
