@@ -18,6 +18,7 @@ body{
 
 @media(max-width:576px){
     .chat-space{
+        width:100%;
         display:none;
     }
 }
@@ -31,6 +32,9 @@ body{
 }
 
 @media(max-width:576px){
+    .person{
+        margin-right:-100;
+    }
     .person.hover{
         background: rgba(204, 246, 255, 0.158);
     }
@@ -40,7 +44,7 @@ body{
     background: #1d222f;
     padding:5px 20px;
     color:white;
-    width:93%;
+    width:94%;
 }
 
 .cam{
@@ -57,6 +61,7 @@ body{
     margin-bottom:auto;
     background:#1d222f;
     padding:10px 20px;
+    width:94%;
 }
 
 textarea{
@@ -68,7 +73,7 @@ textarea{
 }
 
 textarea:focus{
-    border-color: transparent;
+    outline: none;
 }
 
 textarea:focus{
@@ -109,10 +114,17 @@ textarea:focus{
     }
 }
 
+@media(max-width:990px){
+    .search{
+        display: none;
+    }
+}
+
 .bar{
     background: rgb(49, 55, 88);
     padding:6px 0px 0px 10px;
     display:none;
+    width:100%;
 }
 
 @media(min-width:1200px){
@@ -126,7 +138,21 @@ textarea:focus{
 
 @media(max-width:576px){
     .bar{
+        position: relative !important;
+    }
+}
+
+@media(max-width:766px){
+    .bar{
         position:fixed !important;
+        
+    }
+}
+
+@media(max-width:990px){
+    .bar{
+        position:fixed !important;
+        width: 43%;
     }
 }
 
@@ -206,8 +232,8 @@ input{
 }
 
 .profile{
-    width:15%;
-    height:10%;
+    width:45px;
+    height:55px;
 }
 
 .text-grey{
